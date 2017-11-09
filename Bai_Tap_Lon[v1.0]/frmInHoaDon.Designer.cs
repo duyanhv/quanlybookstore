@@ -1,6 +1,6 @@
 ﻿namespace Bai_Tap_Lon_v1._0_
 {
-    partial class Form2
+    partial class frmInHoaDon
     {
         /// <summary>
         /// Required designer variable.
@@ -39,18 +39,18 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1676, 736);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1238, 701);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
-            // Form2
+            // frmInHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1676, 736);
+            this.ClientSize = new System.Drawing.Size(1238, 701);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Name = "frmInHoaDon";
+            this.Text = "frmInHoaDon";
             this.ResumeLayout(false);
 
         }

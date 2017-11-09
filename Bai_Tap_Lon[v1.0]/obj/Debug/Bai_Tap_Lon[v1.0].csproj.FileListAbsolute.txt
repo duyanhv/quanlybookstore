@@ -4,7 +4,6 @@ C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\Bai_
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon[v1.0].csprojResolveAssemblyReference.cache
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.Form1.resources
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.HoaDonNhap.resources
-C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.HoaDonXuat.resources
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.Properties.Resources.resources
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.SalesManagement.resources
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon[v1.0].csproj.GenerateResource.Cache
@@ -30,4 +29,4 @@ C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\Flas
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\stdole.dll
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\ShockwaveFlashObjects.dll
-C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.Form2.resources
+C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.frmInHoaDon.resources

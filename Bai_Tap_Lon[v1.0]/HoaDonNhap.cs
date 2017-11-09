@@ -17,6 +17,7 @@ namespace Bai_Tap_Lon_v1._0_
         String sCnnStr = ConfigurationManager.ConnectionStrings["myCnnStr"].ConnectionString;
         Boolean isActive = false;
 
+
         //TODO: crystal report -> lam phan IN HOA DON -> subcrystal tim hieu
 
         public HoaDonNhap()
@@ -69,6 +70,8 @@ namespace Bai_Tap_Lon_v1._0_
             }
             return null;
         }
+
+       
 
         public void loadCbb()
         {
@@ -208,6 +211,19 @@ namespace Bai_Tap_Lon_v1._0_
         private void btnInfo_Click(object sender, EventArgs e)
         {
             dataGridView_loadData();
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            frmInHoaDon frmInHoaDon = new frmInHoaDon(cbbHoaDon.Text);
+            //getcbbHoaDon();
+            frmInHoaDon.ShowDialog();
+        }
+       
+
+        public int getcbbHoaDon()
+        {
+            return Int32.Parse(cbbHoaDon.SelectedValue.ToString());
         }
     }
 }

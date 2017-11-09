@@ -30,8 +30,6 @@ namespace Bai_Tap_Lon_v1._0_
 
         private void revenueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
         }
     }
 }

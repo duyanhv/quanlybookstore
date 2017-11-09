@@ -53,6 +53,7 @@
             this.monthlyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.revenueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quantityToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -213,14 +214,14 @@
             // revenueToolStripMenuItem
             // 
             this.revenueToolStripMenuItem.Name = "revenueToolStripMenuItem";
-            this.revenueToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.revenueToolStripMenuItem.Size = new System.Drawing.Size(164, 30);
             this.revenueToolStripMenuItem.Text = "Revenue";
             this.revenueToolStripMenuItem.Click += new System.EventHandler(this.revenueToolStripMenuItem_Click);
             // 
             // quantityToolStripMenuItem
             // 
             this.quantityToolStripMenuItem.Name = "quantityToolStripMenuItem";
-            this.quantityToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.quantityToolStripMenuItem.Size = new System.Drawing.Size(164, 30);
             this.quantityToolStripMenuItem.Text = "Quantity";
             // 
             // monthlyReportToolStripMenuItem
@@ -253,7 +254,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Bookstore Sale Management";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -288,6 +289,7 @@
         private System.Windows.Forms.ToolStripMenuItem alertToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ranOutOfGoodsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unsoldGoodsToolStripMenuItem;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

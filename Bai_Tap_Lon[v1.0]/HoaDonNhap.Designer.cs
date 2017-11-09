@@ -214,6 +214,7 @@
             this.btnPrint.TabIndex = 19;
             this.btnPrint.Text = "IN HOA DON";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnSearch
             // 
