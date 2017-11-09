@@ -44,26 +44,21 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEDIT = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // mtxtNgayNhap
             // 
-            this.mtxtNgayNhap.Location = new System.Drawing.Point(184, 138);
-            this.mtxtNgayNhap.Mask = "00/00/0000";
+            this.mtxtNgayNhap.Location = new System.Drawing.Point(204, 163);
             this.mtxtNgayNhap.Name = "mtxtNgayNhap";
             this.mtxtNgayNhap.Size = new System.Drawing.Size(152, 26);
             this.mtxtNgayNhap.TabIndex = 0;
-            this.mtxtNgayNhap.ValidatingType = typeof(System.DateTime);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 26);
+            this.label1.Location = new System.Drawing.Point(44, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 1;
@@ -72,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 82);
+            this.label2.Location = new System.Drawing.Point(44, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 2;
@@ -81,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 141);
+            this.label3.Location = new System.Drawing.Point(44, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 20);
             this.label3.TabIndex = 3;
@@ -90,7 +85,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 198);
+            this.label4.Location = new System.Drawing.Point(44, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 4;
@@ -99,7 +94,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 252);
+            this.label5.Location = new System.Drawing.Point(44, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 5;
@@ -108,7 +103,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 308);
+            this.label6.Location = new System.Drawing.Point(44, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 20);
             this.label6.TabIndex = 6;
@@ -117,7 +112,7 @@
             // cbbHoaDon
             // 
             this.cbbHoaDon.FormattingEnabled = true;
-            this.cbbHoaDon.Location = new System.Drawing.Point(184, 23);
+            this.cbbHoaDon.Location = new System.Drawing.Point(204, 48);
             this.cbbHoaDon.Name = "cbbHoaDon";
             this.cbbHoaDon.Size = new System.Drawing.Size(152, 28);
             this.cbbHoaDon.TabIndex = 7;
@@ -125,28 +120,28 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(184, 79);
+            this.txtMaNV.Location = new System.Drawing.Point(204, 104);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(152, 26);
             this.txtMaNV.TabIndex = 8;
             // 
             // txtMaSach
             // 
-            this.txtMaSach.Location = new System.Drawing.Point(184, 195);
+            this.txtMaSach.Location = new System.Drawing.Point(204, 220);
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.Size = new System.Drawing.Size(152, 26);
             this.txtMaSach.TabIndex = 9;
             // 
             // txtGianhap
             // 
-            this.txtGianhap.Location = new System.Drawing.Point(184, 249);
+            this.txtGianhap.Location = new System.Drawing.Point(204, 274);
             this.txtGianhap.Name = "txtGianhap";
             this.txtGianhap.Size = new System.Drawing.Size(152, 26);
             this.txtGianhap.TabIndex = 10;
             // 
             // txtSoluong
             // 
-            this.txtSoluong.Location = new System.Drawing.Point(184, 305);
+            this.txtSoluong.Location = new System.Drawing.Point(204, 330);
             this.txtSoluong.Name = "txtSoluong";
             this.txtSoluong.Size = new System.Drawing.Size(152, 26);
             this.txtSoluong.TabIndex = 11;
@@ -157,7 +152,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(407, 161);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(639, 220);
+            this.dataGridView1.Size = new System.Drawing.Size(510, 220);
             this.dataGridView1.TabIndex = 12;
             // 
             // btnAdd
@@ -190,22 +185,6 @@
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(184, 379);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(152, 26);
-            this.txtSearch.TabIndex = 16;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 382);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 20);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Tim kiem";
-            // 
             // btnPrint
             // 
             this.btnPrint.Location = new System.Drawing.Point(794, 26);
@@ -216,25 +195,13 @@
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(923, 26);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(123, 105);
-            this.btnSearch.TabIndex = 20;
-            this.btnSearch.Text = "SEARCH";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // HoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1073, 443);
-            this.Controls.Add(this.btnSearch);
+            this.ClientSize = new System.Drawing.Size(941, 404);
             this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.btnEDIT);
             this.Controls.Add(this.btnAdd);
@@ -278,9 +245,6 @@
         private System.Windows.Forms.Button btnEDIT;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.Button btnSearch;
     }
 }

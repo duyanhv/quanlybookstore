@@ -15,7 +15,7 @@ namespace Bai_Tap_Lon_v1._0_
     public partial class HoaDonNhap : Form
     {
         String sCnnStr = ConfigurationManager.ConnectionStrings["myCnnStr"].ConnectionString;
-        Boolean isActive = false;
+        Boolean isActive;
 
 
         //TODO: crystal report -> lam phan IN HOA DON -> subcrystal tim hieu
@@ -25,7 +25,7 @@ namespace Bai_Tap_Lon_v1._0_
             InitializeComponent();
             loadCbb();
             disableEdit();
-            
+            isActive = true;
 
             
         }
@@ -178,8 +178,13 @@ namespace Bai_Tap_Lon_v1._0_
 
         private void btnEDIT_Click(object sender, EventArgs e)
         {
-            
-            
+            String sSQL_UpdateHDXbyID = "sp_updateHDXbyID";
+
+            String iMaNV = txtMaNV.Text;
+            String dNgaynhap = mtxtNgayNhap.Text;
+            String sMasach = txtMaSach.Text;
+            float fGianhap = float.Parse(txtGianhap.Text);
+            float fSoluongnhap = float.Parse(txtSoluong.Text);
 
             if (isActive)
             {
@@ -193,6 +198,44 @@ namespace Bai_Tap_Lon_v1._0_
                 btnEDIT.Text = "EDIT";
                 isActive = true;
                 disableEdit();
+
+                try
+                {
+                    using(SqlConnection cn = new SqlConnection(sCnnStr))
+                    {
+                        cn.Open();
+                        using(SqlCommand cm = new SqlCommand(sSQL_UpdateHDXbyID, cn))
+                        {
+                            cm.CommandType = CommandType.StoredProcedure;
+
+                            cm.Parameters.AddWithValue("@iSoHD1", Int32.Parse(cbbHoaDon.SelectedValue.ToString()));
+                            cm.Parameters.AddWithValue("@iSoHD2", Int32.Parse(cbbHoaDon.SelectedValue.ToString()));
+                            cm.Parameters.AddWithValue("@iMaNV", iMaNV);
+                            cm.Parameters.AddWithValue("@dNgaynhapsach", dNgaynhap);
+                            cm.Parameters.AddWithValue("@sMasach", sMasach);
+                            cm.Parameters.AddWithValue("@fGianhap", fGianhap);
+                            cm.Parameters.AddWithValue("@fSoluongnhap", fSoluongnhap);
+
+                            int check = cm.ExecuteNonQuery();
+
+                            if(check != 0)
+                            {
+                                MessageBox.Show("Updated Successfully");
+                                cn.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Failed");
+                            }
+                        }
+                    }
+
+
+
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("" + ex);
+                }
             }
         }
 
