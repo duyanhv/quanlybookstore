@@ -40,7 +40,7 @@ namespace Bai_Tap_Lon_v1._0_
             }
             catch (Exception ex)
             {
-                MessageBox.Show("" + ex);
+                //MessageBox.Show("" + ex);
             }
         }
 
@@ -69,7 +69,7 @@ namespace Bai_Tap_Lon_v1._0_
                 }
             }catch(Exception ex)
             {
-                MessageBox.Show("" + ex);
+               // MessageBox.Show("" + ex);
             }
             return null;
         }
@@ -106,7 +106,7 @@ namespace Bai_Tap_Lon_v1._0_
                 }
             }catch(Exception ex)
             {
-                MessageBox.Show("" + ex);
+                //MessageBox.Show("" + ex);
             }
         }
 
@@ -147,7 +147,7 @@ namespace Bai_Tap_Lon_v1._0_
 
             }catch(Exception ex)
             {
-                MessageBox.Show("" + ex);
+                //MessageBox.Show("" + ex);
             }
         }
 
@@ -244,7 +244,7 @@ namespace Bai_Tap_Lon_v1._0_
 
                 }catch(Exception ex)
                 {
-                    MessageBox.Show("" + ex);
+                    //MessageBox.Show("" + ex);
                 }
             }
         }
@@ -275,8 +275,7 @@ namespace Bai_Tap_Lon_v1._0_
                     {
                         cm.CommandType = CommandType.StoredProcedure;
 
-                        cm.Parameters.AddWithValue("@iSoHD1", iSoHD);
-                        cm.Parameters.AddWithValue("@iSoHD2", iSoHD);
+                        cm.Parameters.AddWithValue("@iSoHD", iSoHD);
                         cm.Parameters.AddWithValue("@iMaNV", iMaNV);
                         cm.Parameters.AddWithValue("@dNgaynhapsach", dNgaynhap);
                         cm.Parameters.AddWithValue("@sMasach", sMasach);
@@ -284,13 +283,9 @@ namespace Bai_Tap_Lon_v1._0_
                         cm.Parameters.AddWithValue("@fSoluongnhap", fSoluongnhap);
 
                         int check = cm.ExecuteNonQuery();
-                        if(check == iSoHD)
-                        {
-                            MessageBox.Show("Hoa don so: " + iSoHD + " bi trung");
-                        }else if(check != 0)
+                        if(check != iSoHD)
                         {
                             MessageBox.Show("Added Successfully");
-                      
                         }
                         else
                         {
@@ -302,7 +297,7 @@ namespace Bai_Tap_Lon_v1._0_
             }
             catch(Exception ex)
             {
-                MessageBox.Show("" + ex);
+                //MessageBox.Show("" + ex);
             }
         }
 
