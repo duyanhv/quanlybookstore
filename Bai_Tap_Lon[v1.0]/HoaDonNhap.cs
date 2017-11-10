@@ -16,6 +16,8 @@ namespace Bai_Tap_Lon_v1._0_
     {
         String sCnnStr = ConfigurationManager.ConnectionStrings["myCnnStr"].ConnectionString;
         Boolean isActive;
+        Boolean isClear;
+        
 
 
         //TODO: crystal report -> lam phan IN HOA DON -> subcrystal tim hieu
@@ -26,8 +28,8 @@ namespace Bai_Tap_Lon_v1._0_
             loadCbb();
             disableEdit();
             isActive = true;
-
-            
+            isClear = true;
+           
         }
 
         private void dataGridView_loadData()
@@ -41,6 +43,7 @@ namespace Bai_Tap_Lon_v1._0_
                 MessageBox.Show("" + ex);
             }
         }
+
 
         private DataTable getData(int iSoHD)
         {
@@ -155,6 +158,7 @@ namespace Bai_Tap_Lon_v1._0_
             txtSoluong.Enabled = false;
             txtGianhap.Enabled = false;
             mtxtNgayNhap.Enabled = false;
+            btnAdd.Enabled = false;
         }
 
         public void enableEdit()
@@ -164,16 +168,21 @@ namespace Bai_Tap_Lon_v1._0_
             txtSoluong.Enabled = true;
             txtGianhap.Enabled = true;
             mtxtNgayNhap.Enabled = true;
+            btnAdd.Enabled = true;
         }
 
         public void clearEdit()
         {
+           
             txtMaNV.Clear();
             txtMaSach.Clear();
             txtSoluong.Clear();
             txtGianhap.Clear();
             mtxtNgayNhap.Clear();
+            cbbHoaDon.SelectedIndex = -1;
         }
+
+
 
 
         private void btnEDIT_Click(object sender, EventArgs e)
@@ -198,6 +207,7 @@ namespace Bai_Tap_Lon_v1._0_
                 btnEDIT.Text = "EDIT";
                 isActive = true;
                 disableEdit();
+                
 
                 try
                 {
@@ -243,12 +253,57 @@ namespace Bai_Tap_Lon_v1._0_
         {
             initText();
             
-
         }
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            String sSQL_sp_addHDXbyID = "sp_addHDXbyID";
+
+            String iMaNV = txtMaNV.Text;
+            String dNgaynhap = mtxtNgayNhap.Text;
+            String sMasach = txtMaSach.Text;
+            float fGianhap = float.Parse(txtGianhap.Text);
+            float fSoluongnhap = float.Parse(txtSoluong.Text);
+            int iSoHD = int.Parse(cbbHoaDon.Text);
+            try
+            {
+                using(SqlConnection cn = new SqlConnection(sCnnStr))
+                {
+                    cn.Open();
+                    using(SqlCommand cm = new SqlCommand(sSQL_sp_addHDXbyID, cn))
+                    {
+                        cm.CommandType = CommandType.StoredProcedure;
+
+                        cm.Parameters.AddWithValue("@iSoHD1", iSoHD);
+                        cm.Parameters.AddWithValue("@iSoHD2", iSoHD);
+                        cm.Parameters.AddWithValue("@iMaNV", iMaNV);
+                        cm.Parameters.AddWithValue("@dNgaynhapsach", dNgaynhap);
+                        cm.Parameters.AddWithValue("@sMasach", sMasach);
+                        cm.Parameters.AddWithValue("@fGianhap", fGianhap);
+                        cm.Parameters.AddWithValue("@fSoluongnhap", fSoluongnhap);
+
+                        int check = cm.ExecuteNonQuery();
+                        if(check == iSoHD)
+                        {
+                            MessageBox.Show("Hoa don so: " + iSoHD + " bi trung");
+                        }else if(check != 0)
+                        {
+                            MessageBox.Show("Added Successfully");
+                      
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed");
+                        }
+
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("" + ex);
+            }
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
@@ -267,6 +322,15 @@ namespace Bai_Tap_Lon_v1._0_
         public int getcbbHoaDon()
         {
             return Int32.Parse(cbbHoaDon.SelectedValue.ToString());
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            clearEdit();
+            enableEdit();
+
+            var last = cbbHoaDon.Items.Count + 1;
+            cbbHoaDon.Text = last + "";
         }
     }
 }

@@ -45,12 +45,13 @@
             this.btnEDIT = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // mtxtNgayNhap
             // 
-            this.mtxtNgayNhap.Location = new System.Drawing.Point(204, 163);
+            this.mtxtNgayNhap.Location = new System.Drawing.Point(209, 147);
             this.mtxtNgayNhap.Name = "mtxtNgayNhap";
             this.mtxtNgayNhap.Size = new System.Drawing.Size(152, 26);
             this.mtxtNgayNhap.TabIndex = 0;
@@ -58,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 51);
+            this.label1.Location = new System.Drawing.Point(49, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 1;
@@ -67,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 107);
+            this.label2.Location = new System.Drawing.Point(49, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 2;
@@ -76,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 166);
+            this.label3.Location = new System.Drawing.Point(49, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 20);
             this.label3.TabIndex = 3;
@@ -85,7 +86,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 223);
+            this.label4.Location = new System.Drawing.Point(49, 207);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 4;
@@ -94,7 +95,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(44, 277);
+            this.label5.Location = new System.Drawing.Point(49, 261);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 5;
@@ -103,7 +104,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 333);
+            this.label6.Location = new System.Drawing.Point(49, 317);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 20);
             this.label6.TabIndex = 6;
@@ -112,7 +113,7 @@
             // cbbHoaDon
             // 
             this.cbbHoaDon.FormattingEnabled = true;
-            this.cbbHoaDon.Location = new System.Drawing.Point(204, 48);
+            this.cbbHoaDon.Location = new System.Drawing.Point(209, 32);
             this.cbbHoaDon.Name = "cbbHoaDon";
             this.cbbHoaDon.Size = new System.Drawing.Size(152, 28);
             this.cbbHoaDon.TabIndex = 7;
@@ -120,28 +121,28 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(204, 104);
+            this.txtMaNV.Location = new System.Drawing.Point(209, 88);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(152, 26);
             this.txtMaNV.TabIndex = 8;
             // 
             // txtMaSach
             // 
-            this.txtMaSach.Location = new System.Drawing.Point(204, 220);
+            this.txtMaSach.Location = new System.Drawing.Point(209, 204);
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.Size = new System.Drawing.Size(152, 26);
             this.txtMaSach.TabIndex = 9;
             // 
             // txtGianhap
             // 
-            this.txtGianhap.Location = new System.Drawing.Point(204, 274);
+            this.txtGianhap.Location = new System.Drawing.Point(209, 258);
             this.txtGianhap.Name = "txtGianhap";
             this.txtGianhap.Size = new System.Drawing.Size(152, 26);
             this.txtGianhap.TabIndex = 10;
             // 
             // txtSoluong
             // 
-            this.txtSoluong.Location = new System.Drawing.Point(204, 330);
+            this.txtSoluong.Location = new System.Drawing.Point(209, 314);
             this.txtSoluong.Name = "txtSoluong";
             this.txtSoluong.Size = new System.Drawing.Size(152, 26);
             this.txtSoluong.TabIndex = 11;
@@ -195,12 +196,23 @@
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(91, 358);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(201, 34);
+            this.btnClear.TabIndex = 20;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // HoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(941, 404);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.btnEDIT);
@@ -246,5 +258,6 @@
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnClear;
     }
 }
