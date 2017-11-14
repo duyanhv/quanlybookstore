@@ -33,5 +33,16 @@ namespace Bai_Tap_Lon_v1._0_.Properties {
                 return ((string)(this["db_RestaurantManagementConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VOLKTR8\\SQLEXPRESS;Initial Catalog=db_bookstore;Integrated Se" +
+            "curity=True")]
+        public string db_bookstoreConnectionString {
+            get {
+                return ((string)(this["db_bookstoreConnectionString"]));
+            }
+        }
     }
 }

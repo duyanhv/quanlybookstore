@@ -30,3 +30,4 @@ C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\Crys
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\stdole.dll
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.frmInHoaDon.resources
+C:\Users\Duy Anh\source\repos\Bai_Tap_Lon[v1.0]\Bai_Tap_Lon[v1.0]\obj\Debug\Bai_Tap_Lon_v1._0_.Search.resources

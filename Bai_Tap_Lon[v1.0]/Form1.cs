@@ -27,6 +27,14 @@ namespace Bai_Tap_Lon_v1._0_
 
         }
 
+        private void productToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search search = new Search();
+            search.MdiParent = this;
+            search.Show();
+        }
+
+
         private void dailyReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -35,5 +43,7 @@ namespace Bai_Tap_Lon_v1._0_
         private void revenueToolStripMenuItem_Click(object sender, EventArgs e)
         {
         }
+
+        
     }
 }

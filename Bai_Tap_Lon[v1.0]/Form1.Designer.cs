@@ -42,10 +42,6 @@
             this.ranOutOfGoodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unsoldGoodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchByNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchByTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchByAuthorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchByPriceRangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dailyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.revenueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +50,7 @@
             this.revenueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quantityToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,37 +157,11 @@
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchByNameToolStripMenuItem,
-            this.searchByTypeToolStripMenuItem,
-            this.searchByAuthorToolStripMenuItem,
-            this.searchByPriceRangeToolStripMenuItem});
+            this.toolStripSeparator1});
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(141, 29);
-            this.productToolStripMenuItem.Text = "Product search";
-            // 
-            // searchByNameToolStripMenuItem
-            // 
-            this.searchByNameToolStripMenuItem.Name = "searchByNameToolStripMenuItem";
-            this.searchByNameToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
-            this.searchByNameToolStripMenuItem.Text = "Search by name";
-            // 
-            // searchByTypeToolStripMenuItem
-            // 
-            this.searchByTypeToolStripMenuItem.Name = "searchByTypeToolStripMenuItem";
-            this.searchByTypeToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
-            this.searchByTypeToolStripMenuItem.Text = "Search by type";
-            // 
-            // searchByAuthorToolStripMenuItem
-            // 
-            this.searchByAuthorToolStripMenuItem.Name = "searchByAuthorToolStripMenuItem";
-            this.searchByAuthorToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
-            this.searchByAuthorToolStripMenuItem.Text = "Search by author";
-            // 
-            // searchByPriceRangeToolStripMenuItem
-            // 
-            this.searchByPriceRangeToolStripMenuItem.Name = "searchByPriceRangeToolStripMenuItem";
-            this.searchByPriceRangeToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
-            this.searchByPriceRangeToolStripMenuItem.Text = "Search by price range";
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(76, 29);
+            this.productToolStripMenuItem.Text = "Search";
+            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem
             // 
@@ -245,6 +216,11 @@
             this.quantityToolStripMenuItem1.Size = new System.Drawing.Size(164, 30);
             this.quantityToolStripMenuItem1.Text = "Quantity";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(263, 6);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -279,10 +255,6 @@
         private System.Windows.Forms.ToolStripMenuItem monthlyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem goodsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem goodsRecieptToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchByNameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchByTypeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchByAuthorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchByPriceRangeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem revenueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quantityToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem revenueToolStripMenuItem1;
@@ -291,6 +263,7 @@
         private System.Windows.Forms.ToolStripMenuItem ranOutOfGoodsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unsoldGoodsToolStripMenuItem;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 
