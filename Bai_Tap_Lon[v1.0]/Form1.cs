@@ -15,12 +15,16 @@ namespace Bai_Tap_Lon_v1._0_
         public Form1()
         {
             InitializeComponent();
+ 
         }
 
         private void editReceiptToolStripMenuItem_Click(object sender, EventArgs e)
         {
             HoaDonNhap hoaDonNhap = new HoaDonNhap();
-            hoaDonNhap.ShowDialog();
+            //hoaDonNhap.ShowDialog();
+            hoaDonNhap.MdiParent = this;
+            hoaDonNhap.Show();
+
         }
 
         private void dailyReportToolStripMenuItem_Click(object sender, EventArgs e)
